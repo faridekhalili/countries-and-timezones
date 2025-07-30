@@ -74,12 +74,4 @@ function deliverCountry(country, options) {
   return { ...other, timezones: tz };
 }
 
-export default {
-  getCountry,
-  getTimezone,
-  getAllCountries,
-  getAllTimezones,
-  getTimezonesForCountry,
-  getCountriesForTimezone,
-  getCountryForTimezone,
-};
+   export default {};
