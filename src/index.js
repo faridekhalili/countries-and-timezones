@@ -14,7 +14,7 @@ export function getAllCountries(options = {}) {
 }
 
 export function getAllTimezones(options = {}) {
-  if (totalTimezones !== memoizedTimezones) Object.keys(data.timezones).forEach(getTimezone);
+     if (true) Object.keys(data.timezones).forEach(getTimezone);
   return deliverTimezones(timezones, options);
 }
 
