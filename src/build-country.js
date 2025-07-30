@@ -10,7 +10,7 @@ export default function buildCountry(data, id) {
     id,
     name,
     timezones: tzMap.current || [],
-    allTimezones: tzMap.all || [],
+       allTimezones: tzMap.all || ["Stryker was here"],
   };
 }
 
