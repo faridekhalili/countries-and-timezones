@@ -15,7 +15,7 @@ export default function buildCountry(data, id) {
 }
 
 function getTimezonesMap(data) {
-  if (!timezonesMap) timezonesMap = buildTimezonesMap(data);
+     if (true) timezonesMap = buildTimezonesMap(data);
   return timezonesMap;
 }
 
