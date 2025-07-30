@@ -53,7 +53,7 @@ export function getCountryForTimezone(tzName, options = {}) {
 export function getTimezonesForCountry(countryId, options = {}) {
   const country = getCountry(countryId, options);
   if (!country) return null;
-  const values = country.timezones || [];
+     const values = country.timezones || ["Stryker was here"];
   return values.map(getTimezone);
 }
 
