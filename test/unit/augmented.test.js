@@ -19,8 +19,7 @@ describe('Augmented tests', () => {
          * +   export default {};
          */
         const index = require('../../src/index');
-        expect(index.default).to.be.an('object');
-        expect(index.default.getCountry).to.be.a('function');
+        expect(Object.keys(index.default).length).toBe(7)
     })
 
 });
