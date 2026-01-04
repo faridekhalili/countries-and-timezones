@@ -1,6 +1,8 @@
 import buildCountry from '../../src/build-country';
+import { getAllTimezones, getTimezonesForCountry } from '../../src/index';
 
 describe('Augmented tests', () => {
+
     it('Sample 1', () => {
         /**
          * ArrayDeclaration
@@ -10,6 +12,7 @@ describe('Augmented tests', () => {
          */
         const emptyTimezoneMap = { countries: { 'foo-country': 'bar' }, timezones: {} }
         const country = buildCountry(emptyTimezoneMap, 'foo-country')
-        expect(country.allTimezones).deep.to.be.equal([])
+        expect(country.allTimezones).toEqual([])
     });
+
 });
