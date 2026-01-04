@@ -12,6 +12,6 @@ describe('Augmented tests', () => {
          */
         const emptyTimezoneMap = { countries: { 'foo-country': 'bar' }, timezones: {} }
         const country = buildCountry(emptyTimezoneMap, 'foo-country')
-        expect(country.timezones).deep.to.be.equal([])
+        expect(country.timezones).toEqual([])
     });
 });
